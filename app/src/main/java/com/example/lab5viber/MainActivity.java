@@ -68,4 +68,11 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, getString(R.string.msg_sync_complete), Toast.LENGTH_SHORT).show();
         loadNotes();
     }
+    @Override
+    protected void onDestroy() {
+        if (dbHelper != null) {
+            dbHelper.close();
+        }
+        super.onDestroy();
+    }
 }

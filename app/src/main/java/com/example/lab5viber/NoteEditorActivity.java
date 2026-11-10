@@ -68,4 +68,11 @@ public class NoteEditorActivity extends AppCompatActivity {
         Toast.makeText(this, getString(R.string.msg_saved), Toast.LENGTH_SHORT).show();
         finish();
     }
+    @Override
+    protected void onDestroy() {
+        if (dbHelper != null) {
+            dbHelper.close();
+        }
+        super.onDestroy();
+    }
 }
