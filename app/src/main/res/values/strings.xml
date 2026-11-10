@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Lab5Viber</string>
+    <string name="title_hint">Note Title</string>
+    <string name="content_hint">Note Content</string>
+    <string name="save_button">Save Note</string>
+    <string name="sync_button">Sync SQLite to File</string>
+    <string name="storage_sqlite">SQLite (Primary)</string>
+    <string name="storage_file">Text File (Secondary)</string>
+    <string name="error_empty">Title and Content cannot be empty!</string>
+    <string name="msg_saved">Note saved successfully</string>
+    <string name="msg_deleted">Note deleted</string>
+    <string name="msg_sync_complete">Sync to secondary storage complete!</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+</resources>
